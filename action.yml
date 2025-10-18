@@ -2,12 +2,12 @@ name: "podcast generator"
 runs:
  using: "docker"
  image: "DockerFile"
- inputs:
-   email:
+inputs:
+  email:
      description: "email"
      required: true
      default: ${{ github.actor }}@localhost
-   name:
+  name:
      description: "name"
      required: true
      default: ${{ github.actor}}
